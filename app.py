@@ -27,29 +27,48 @@ st.markdown("""
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+    .stMetric label {
+        color: #1f1f1f !important;
+        font-weight: 600;
+    }
+    .stMetric [data-testid="stMetricValue"] {
+        color: #0e1117 !important;
+    }
     .metric-card {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         padding: 20px;
         border-radius: 10px;
-        color: white;
+        color: white !important;
         margin: 10px 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .metric-card h2, .metric-card h3, .metric-card p {
+        color: white !important;
     }
     .indicator-card {
-        background-color: #ffffff;
+        background-color: #f8f9fa;
         padding: 15px;
         border-radius: 8px;
         border-left: 4px solid #667eea;
         margin: 8px 0;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+    .indicator-card h4 {
+        color: #1f1f1f !important;
+        margin-bottom: 10px;
+    }
+    .indicator-card p {
+        color: #333333 !important;
+        margin: 5px 0;
     }
     h1 {
-        color: #667eea;
+        color: #667eea !important;
         font-weight: 700;
     }
     .stButton>button {
         width: 100%;
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
+        color: white !important;
         border: none;
         padding: 0.75rem 1rem;
         font-size: 1.1rem;
@@ -60,6 +79,24 @@ st.markdown("""
     .stButton>button:hover {
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    }
+    /* Ensure good contrast for info boxes */
+    .stAlert {
+        background-color: #e8f4f8 !important;
+        color: #0c5460 !important;
+    }
+    /* Tab styling for better visibility */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 8px;
+    }
+    .stTabs [data-baseweb="tab"] {
+        background-color: #f0f2f6;
+        color: #1f1f1f !important;
+        font-weight: 500;
+    }
+    .stTabs [aria-selected="true"] {
+        background-color: #667eea !important;
+        color: white !important;
     }
     </style>
 """, unsafe_allow_html=True)
